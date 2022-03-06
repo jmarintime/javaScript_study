@@ -41,6 +41,17 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
     <script>
+
+        const Mike = {
+            name: "Mkie",
+            age : 30,
+            showname : function() {
+                console.log(this.name + " " + this.age);
+            }
+        }
+
+        Mike.showname();
+
         function regist()
         {
             alert(document.getElementById("name").value);
@@ -57,8 +68,7 @@
             printConsole(obj);
         }
 
-        function printConsole(data)
-        {
+        let printConsole = (data) => {
             console.log(data);
         }
 
@@ -81,7 +91,6 @@
                 {
                     $('#city').append('<option value ="' + city[i].code + '">' + city[i].name + '</option>');
                 }
-
             }
         }
 
